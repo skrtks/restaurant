@@ -9,11 +9,12 @@
 import UIKit
 
 class OrderConfirmationViewController: UIViewController {
-
+    @IBOutlet weak var timeRemainingLabel: UILabel!
+    var minutes: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        timeRemainingLabel.text = "Thank's for ordering, wait time is: \(minutes!) minutes."
     }
 
     override func didReceiveMemoryWarning() {
